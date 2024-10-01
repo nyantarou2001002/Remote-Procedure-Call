@@ -16,57 +16,61 @@
 さらに、上記に示されているような一連の関数をクライアントに提供することで、サーバはRPCを実現します。これにより、クライアントはサーバ上で定義された関数を呼び出し、その結果を取得することができます。
 
 - floor
-
+実行
 ```
 Input Method --> floor
 Input params --> 5.7
 Input Id --> 1
 ```
-
+サーバーからのレスポンス
 ```
 { results: 5, id: '1' }
 ```
 
 - nroot
+実行
 ```
 Input Method --> nroot
 Input params --> 2, 16
 Input Id --> 2
 ```
-
+サーバーからのレスポンス
 ```
 { results: 4, id: '2' }
 ```
 
 - reverse
-
+実行
 ```
 Input Method --> reverse
 Input params --> hello
 Input Id --> 3
 ```
+サーバーからのレスポンス
 ```
 { results: "olleh", id: '3' }
 ```
 
 - validAnagram
+実行
 ```
 Input Method --> validAnagram
 Input params --> listen, silent
 Input Id --> 4
 ```
+サーバーからのレスポンス
 ```
 { results: true, id: '4' }
 ```
 
 - sort
-
+実行
 ```
 Input Method --> sort
 Input params --> banana,apple,orange
 Input Id --> 5
 ```
-
+サーバーからのレスポンス
 ```
 { results: ["apple", "banana", "orange"], id: '5' }
 ```
