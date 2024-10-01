@@ -15,7 +15,7 @@
 
 さらに、上記に示されているような一連の関数をクライアントに提供することで、サーバはRPCを実現します。これにより、クライアントはサーバ上で定義された関数を呼び出し、その結果を取得することができます。
 
-- floor
+- floor  
 実行
 ```
 Input Method --> floor
@@ -27,7 +27,7 @@ Input Id --> 1
 { results: 5, id: '1' }
 ```
 
-- nroot
+- nroot  
 実行
 ```
 Input Method --> nroot
@@ -39,7 +39,7 @@ Input Id --> 2
 { results: 4, id: '2' }
 ```
 
-- reverse
+- reverse  
 実行
 ```
 Input Method --> reverse
@@ -51,7 +51,7 @@ Input Id --> 3
 { results: "olleh", id: '3' }
 ```
 
-- validAnagram
+- validAnagram  
 実行
 ```
 Input Method --> validAnagram
@@ -63,7 +63,7 @@ Input Id --> 4
 { results: true, id: '4' }
 ```
 
-- sort
+- sort  
 実行
 ```
 Input Method --> sort
