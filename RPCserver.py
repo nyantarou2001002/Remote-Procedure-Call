@@ -18,17 +18,24 @@ class Function:
         return sorted(str1) == sorted(str2)
 
     def sort(strArr):
-        return sorted(strArr)    
+        return sorted(strArr)
 
     def changeType(method,params):
         if method == "floor":
             return float(params)
         elif method == "nroot":
-            return int(params)
+            param_list = params.split(' ')
+            n = int(param_list[0].strip())  
+            x = float(param_list[1].strip())  
+            return (n, x)
         elif method == "reverse":
             return str(params)
         elif method == "validAnagram":
-            return str(params)
+            param_list = params.split(' ')
+            return (param_list[0], param_list[1])
+        elif method == "sort":
+        # カンマで区切られた文字列をリストに変換
+            return params.split(',')
         else:
             return str(params)
 
@@ -88,19 +95,23 @@ def main():
                 
 
                 if method in functionHashmap:
-                    
-                    result = functionHashmap[method](params)
+                    if method in ["nroot", "validAnagram"]:
+        # タプルとして関数に渡す
+                        result = functionHashmap[method](*params)
+                    else:
+                        result = functionHashmap[method](params)
 
                     answer = {
                         "results": result,
-                        "id":id
+                        "id": id
                     }
-                    
                 else:
                     answer = {
-                        "result":result,
-                        "id":id
+                        "result": "Invalid method",
+                        "id": id
                     }
+
+
                 
 
                 
