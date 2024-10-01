@@ -26,3 +26,56 @@ Input Id --> 1
 ```
 { results: 5, id: '1' }
 ```
+
+- nroot
+```
+Input Method --> nroot
+Input params --> 2, 16
+Input Id --> 2
+```
+
+```
+{ results: 4, id: '2' }
+```
+
+- reverse
+
+```
+Input Method --> reverse
+Input params --> hello
+Input Id --> 3
+```
+```
+{ results: "olleh", id: '3' }
+```
+
+- validAnagram
+```
+Input Method --> validAnagram
+Input params --> listen, silent
+Input Id --> 4
+```
+```
+{ results: true, id: '4' }
+```
+
+- sort
+
+```
+Input Method --> sort
+Input params --> banana,apple,orange
+Input Id --> 5
+```
+
+```
+{ results: ["apple", "banana", "orange"], id: '5' }
+```
+
+
+
+
+
+
+
+
+
